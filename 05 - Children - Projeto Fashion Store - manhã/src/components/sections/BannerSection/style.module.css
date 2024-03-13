@@ -1,0 +1,34 @@
+.bannerSection {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.bannerSection > div,
+.bannerSection > img {
+  width: 50%;
+}
+
+.bannerSection h1 {
+  margin-bottom: 1.125rem;
+}
+
+.bannerSection p {
+  margin-bottom: 4rem;
+}
+
+/* MEDIA QUERY */
+@media (max-width: 880px) {
+  /* .bannerSection h1 {
+    color: red;
+  } */
+
+  .bannerSection {
+    flex-direction: column;
+  }
+
+  .bannerSection > div,
+  .bannerSection > img {
+    width: 100%;
+  }
+}
