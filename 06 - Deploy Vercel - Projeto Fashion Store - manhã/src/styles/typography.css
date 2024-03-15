@@ -1,0 +1,29 @@
+.title1 {
+  font-weight: 500;
+  /* font-size: 6.25rem; */
+  font-size: clamp(3rem, 1.587rem + 5.652vw, 6.25rem);
+}
+
+.title2 {
+  font-weight: 500;
+  /* font-size: 3.75rem; */
+  font-size: clamp(2rem, 1.239rem + 3.043vw, 3.75rem);
+}
+
+.title3 {
+  font-weight: 700;
+  /* font-size: 1.1875rem; */
+  font-size: clamp(1rem, 0.918rem + 0.326vw, 1.188rem);
+  font-family: var(--font-secondary);
+}
+
+.price {
+  /* font-size: 1.125rem; */
+  font-size: clamp(1rem, 0.946rem + 0.217vw, 1.125rem);
+}
+
+.paragraph {
+  /* font-size: 1.1875rem; */
+  font-size: clamp(1rem, 0.918rem + 0.326vw, 1.188rem);
+  font-family: var(--font-secondary);
+}

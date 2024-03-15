@@ -1,0 +1,21 @@
+.productSection {
+  /* padding-block: 6.25rem; */
+  padding-block: clamp(2rem, 0.152rem + 7.391vw, 6.25rem);
+}
+
+.productSection h2 {
+  /* padding-bottom: 3.625rem; */
+  padding-bottom: clamp(1rem, -0.141rem + 4.565vw, 3.625rem);
+}
+
+.productList {
+  display: flex;
+  margin-right: -1rem;
+  padding: 0 1rem 1rem 0;
+  overflow: auto;
+  gap: 2.5rem;
+}
+
+.productList li {
+  min-width: 280px;
+}
