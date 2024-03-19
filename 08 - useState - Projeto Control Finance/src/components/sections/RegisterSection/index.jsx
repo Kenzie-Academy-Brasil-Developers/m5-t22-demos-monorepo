@@ -34,7 +34,7 @@ export const RegisterSection = () => {
           </select>
         </div>
 
-        <button className="btn">Inserir valor</button>
+        <button className="btn">Inserir registro</button>
       </form>
     </section>
   );
