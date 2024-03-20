@@ -1,6 +1,5 @@
 import { Header } from "../../components/Header";
-import { RegisterSection } from "../../components/sections/RegisterSection";
-import { EntrySection } from "../../components/sections/EntrySection";
+import { FinanceSection } from "../../components/sections/FinanceSection";
 
 export const HomePage = () => {
   return (
@@ -8,8 +7,7 @@ export const HomePage = () => {
       <Header />
 
       <main className="container">
-        <RegisterSection />
-        <EntrySection />
+        <FinanceSection />
       </main>
     </>
   );

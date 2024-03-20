@@ -1,4 +1,4 @@
-import TrashIcon from "../../../assets/trash.svg";
+import TrashIcon from "../../../../assets/trash.svg";
 import styles from "./styles.module.css";
 
 export const EntrySection = () => {
