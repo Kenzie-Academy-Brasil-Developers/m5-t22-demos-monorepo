@@ -1,6 +1,27 @@
 import styles from "./styles.module.css";
+import { useState } from "react";
 
-export const RegisterSection = () => {
+export const RegisterSection = ({ addEntry }) => {
+  const [entryValue, setEntryValue] = useState("");
+  const [entryType, setEntryType] = useState("entrada");
+
+  const submitHandler = (event) => {
+    event.preventDefault();
+    // console.log("evento do form disparado!");
+
+    /*
+      {
+        entryValue: '25',
+        entryType: 'entrada'
+      }
+    */
+    const newEntry = { entryValue, entryType };
+    // console.log(newEntry);
+    addEntry(newEntry);
+  };
+
+  // console.log(entryType);
+
   return (
     <section className={styles.registerSection}>
       <div>
@@ -10,7 +31,7 @@ export const RegisterSection = () => {
         </p>
       </div>
 
-      <form className={styles.addEntryForm}>
+      <form onSubmit={submitHandler} className={styles.addEntryForm}>
         <div>
           <label className="text1" htmlFor="entryValue">
             Valor
@@ -22,13 +43,19 @@ export const RegisterSection = () => {
             min={0}
             placeholder="R$ 00,00"
             step={0.1}
+            onChange={(event) => setEntryValue(event.target.valueAsNumber)}
           />
         </div>
         <div>
           <label className="text1" htmlFor="entryType">
             Tipo de valor
           </label>
-          <select name="entrySelect" id="entrySelect" className="text2">
+          <select
+            name="entrySelect"
+            id="entrySelect"
+            className="text2"
+            onChange={(event) => setEntryType(event.target.value)}
+          >
             <option value="entrada">Entrada</option>
             <option value="saida">Saída</option>
           </select>
