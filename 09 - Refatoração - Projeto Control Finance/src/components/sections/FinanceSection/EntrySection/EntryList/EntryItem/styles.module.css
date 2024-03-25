@@ -18,7 +18,7 @@
 }
 
 .entryItem > div > span,
-.entryItem > div > button {
+.delButton {
   display: inline-flex;
   align-items: center;
   justify-content: center;
