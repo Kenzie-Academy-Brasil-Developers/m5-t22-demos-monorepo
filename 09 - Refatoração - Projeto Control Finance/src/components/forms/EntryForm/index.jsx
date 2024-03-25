@@ -11,6 +11,10 @@ export const EntryForm = ({ addEntry }) => {
     event.preventDefault();
     const newEntry = { entryValue, entryType };
     addEntry(newEntry);
+
+    // Resetando os campos de input ao submitar o formulário
+    setEntryValue("");
+    setEntryType("entrada");
   };
 
   return (
@@ -24,7 +28,7 @@ export const EntryForm = ({ addEntry }) => {
         value={entryValue}
       />
       <div>
-        <Select setValue={setEntryType} id="entryType" label="Tipo">
+        <Select setValue={setEntryType} id="entryType" label="Tipo de valor">
           <option value="entrada">Entrada</option>
           <option value="saida">Saída</option>
           {/* <option value="outraOpcao">Outra opção</option> */}
