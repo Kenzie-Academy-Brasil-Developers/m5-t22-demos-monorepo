@@ -1,0 +1,8 @@
+.trashIcon {
+  fill: var(--grey3);
+}
+
+/* COMPONENTE SÓ SOFRE HOVER SE O MOUSE ESTIVER NO SVG (QUEREMOS QUE SEJA QUANDO O MOUSE FIQUE EM CIMA DO BUTTON */
+/* .trashIcon:hover {
+  fill: var(--grey2);
+} */

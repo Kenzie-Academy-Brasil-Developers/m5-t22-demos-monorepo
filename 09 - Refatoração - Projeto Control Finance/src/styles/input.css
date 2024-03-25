@@ -1,0 +1,20 @@
+.inputBox {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+label {
+  color: var(--grey1);
+}
+
+input,
+select {
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  outline: 1.5px solid var(--grey3);
+}
+
+input:focus {
+  outline-color: var(--brand1);
+}

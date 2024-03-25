@@ -1,0 +1,13 @@
+.entryListSubtotal {
+  display: flex;
+  align-items: center;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+}
+
+.entryListSubtotal {
+  padding: 0.875rem 1rem;
+  border: 1.5px solid var(--grey4);
+  background: var(--grey5);
+}

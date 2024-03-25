@@ -1,0 +1,8 @@
+.entrySection {
+  display: flex;
+  flex-direction: column;
+}
+
+.entrySection {
+  gap: 2.3125rem;
+}

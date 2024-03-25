@@ -1,0 +1,15 @@
+.registerSection {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.registerSection > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.registerSection > div > p {
+  color: var(--grey2);
+}
