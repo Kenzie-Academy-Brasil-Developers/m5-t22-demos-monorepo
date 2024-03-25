@@ -4,9 +4,9 @@ import { EntryItem } from "./EntryItem";
 
 /*
   TODO:
-  - Estilizar o trecho de "Nenhum valor cadastrado" com base no figma:
+  [x] - Estilizar o trecho de "Nenhum valor cadastrado" com base no figma:
   https://www.figma.com/file/khx3stYlTjN7zJZOY1pofB/T22-Demo---Control-Finance?node-id=32%3A951&mode=dev
-  - Criar um novo componente para esse trecho
+  [ ] - Criar um novo componente para esse trecho
   */
 
 export const EntryList = ({ entries, removeEntry }) => {
